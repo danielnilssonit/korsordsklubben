@@ -1,7 +1,7 @@
 // Korsordsklubben: sparar spelet i webbläsaren så att det startar även utan internet
-const CACHE = 'kryss-5b68eb110f';
+const CACHE = 'kryss-41ffe5a349';
 // Röstpaketen sparas för sig och byter namn när någon ljudfil ändras (då rensas de gamla bort)
-const VOICE = 'kryss-voice-e230b0b1';
+const VOICE = 'kryss-voice-22d3b7d8';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './favicon-32.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
